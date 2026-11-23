@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Orbit Animation</title> 
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #0a1223;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 8px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        #sketch-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+            width: 100%;
+        }
+        canvas {
+            max-width: 100%;
+            height: auto;
+        }
+        .info {
+            max-width: 650px;
+            margin: 18px auto;
+        }
+        a {
+            color: #8ecbff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Solar Orbit Animation</h1>
+    <h2>Apitan, Richie Lenne S.<br>BSIT2A IT3 FINAL DRILL</h2>
+    <p>A planet orbiting around the sine using sine and cosine.</p>
+    <div id="sketch-container"></div>
+    <div class="info">
+        <p>
+            <strong>Controls:</strong><br>
+            SPACE - Pause or Resume<br>
+            UP / DOWN - Change Speed<br>
+            LEFT / RIGHT - Change Orbit Radius<br>
+        </p>
+        <p>
+            <strong>Mathimatics</strong><br>
+            x = centerX + orbitRadius * cos(angle)<br>
+            y = centerY + orbitRadius * sin(angle)<br>
+        </p>
+        <p>
+            <a href="https://drive.google.com/file/d/1xG03udTHPB6sglnN1VMTk9hjJgCsi5Sf/view?usp=drivesdk" target="_blank">Explanation Video</a> 
+        </p>
+        <p>
+            <strong>Sources and tools: </strong>
+            p5.js library and AI assistance.
+        </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+    <script src="sketch.js"></script>
+</body>
+</html>
